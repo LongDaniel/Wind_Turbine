@@ -1,0 +1,242 @@
+ plyudebug, z_grid para: q1, a1, nz1, L1=  0.90000000000000002        1.8717948717948716E-002           4   7.2999999999999995E-002
+ plyudebug, z_grid para: q2, a2, nz2, L2=  0.99830052930021151        1.4768602217409801E-002          25  0.36178260869599999     
+ plyudebug, z_grid para: q3, a3, nz3, L3=   1.0061686709115309        1.4077772731791317E-002          36  0.56521739130400006     
+ plyudebug: read_acl/acs_param 1: collect_grid
+ rank2d, coord2d(1:2), rankcol, rankrow, xst(1:3)
+ plyunote: mpirank,            0           0           0           0           0           1           1           1
+ plyudebug: read_acl/acs_param 2: read control.dat
+ plyunote: mpirank,            1           0           1           1           0           1          13           1
+ plyunote: mpirank,            2           0           2           2           0           1          25           1
+ plyunote: mpirank,            3           0           3           3           0           1          37           1
+ plyunote: mpirank,            4           0           4           4           0           1          49           1
+ plyunote: mpirank,            5           0           5           5           0           1          61           1
+ plyunote: mpirank,            6           0           6           6           0           1          73           1
+ plyunote: mpirank,            7           0           7           7           0           1          85           1
+ plyunote: mpirank,           24           3           0           0           3           1           1          50
+ plyunote: mpirank,           25           3           1           1           3           1          13          50
+ plyunote: mpirank,           26           3           2           2           3           1          25          50
+ plyunote: mpirank,           27           3           3           3           3           1          37          50
+ plyunote: mpirank,           28           3           4           4           3           1          49          50
+ plyunote: mpirank,           29           3           5           5           3           1          61          50
+ plyunote: mpirank,           30           3           6           6           3           1          73          50
+ plyunote: mpirank,           31           3           7           7           3           1          85          50
+ plyudebug: read_acl/acs_param 3: read Turbine.inp
+ !!!!!! Reading Turbine2.inp !!!!!!
+ plyudebug: read_acl_param 4: read ACL_ucd
+ plyudebug: read_acl_param 5: preprocess(wtm)
+ plyudebug: read_acl_param 6: read Uref_ucd)
+ plyunote: mpirank,            8           1           0           0           1           1           1          18
+ plyunote: mpirank,            9           1           1           1           1           1          13          18
+ plyunote: mpirank,           10           1           2           2           1           1          25          18
+ plyunote: mpirank,           11           1           3           3           1           1          37          18
+ plyunote: mpirank,           12           1           4           4           1           1          49          18
+ plyunote: mpirank,           13           1           5           5           1           1          61          18
+ plyunote: mpirank,           14           1           6           6           1           1          73          18
+ plyunote: mpirank,           15           1           7           7           1           1          85          18
+ plyunote: mpirank,           16           2           0           0           2           1           1          34
+ plyunote: mpirank,           17           2           1           1           2           1          13          34
+ plyunote: mpirank,           18           2           2           2           2           1          25          34
+ plyunote: mpirank,           19           2           3           3           2           1          37          34
+ plyunote: mpirank,           20           2           4           4           2           1          49          34
+ plyunote: mpirank,           21           2           5           5           2           1          61          34
+ plyunote: mpirank,           22           2           6           6           2           1          73          34
+ plyunote: mpirank,           23           2           7           7           2           1          85          34
+ dh_uref=   2.2306056293753484E-003
+ !!!!!!! Reading restart_uref.dat !!!!!!
+ plyudebug: read_acl_param 7: preprocess(Uref)
+ plyudebug: read_acl_param 8: read ACL_coeff
+ C_D =    6.0200000000000002E-003  at AOA=0 for foil type            1
+ Zero-lift angle is    0.0000000000000000     
+ plyudebug: read_nacelle_param, read_nacelle_control
+ plyudebug: read_nacelle_control: read Nacelle.inp
+ plyudebug: read_nacelle_param, disk_read_ucd
+ dh_uref=   7.4895189536265466E-004
+ dh_uref=   6.2288374326368440E-004
+ dh_uref=   5.6674398849946054E-004
+ plyudebug: read_nacelle_param, Pre_process 1
+ plyudebug: read_nacelle_param, Coordinates_IP
+ plyudebug: read_nacelle_param, Pre_process 2
+ plyudebug: read_nacelle_param: completed
+ ======================
+  Time=      0.0013623
+ ======================
+ ti=           1
+ plyudebug, acl_run 1: Uref_ACL
+ plyudebug, acl_run 2: turbineangvel
+ Turbine_           1 :angvel=   44.700081008323835      , TSR=   4.0000000000000000      , U1ref=  0.85882525979364033      , Uref=  0.83812651890607193     
+ plyudebug, acl_run 3: rotor_Rot
+ plyudebug, initial_ang_axis=   5387.0696324434994     
+ Angleinfo: ang_axis, ang0_yaw, angvel_axis   5387.1305254954195        0.0000000000000000        44.700081008323835     
+ plyudebug, rotor_Rot, point before rot:  0.75000000000000000       0.38500000000000001       0.12500000000000000     
+ plyudebug, rotor_Rot, point after rot:  0.75000000000000000       0.34089305152521154       0.14112217479069686     
+ plyudebug, acl_run 4: Pre_process(wtm)
+ plyudebug, acl_run 5: Calc_U_lagr
+ plyudebug, acl_run 6: Calc_F_lagr_ACL
+ plyudebug, acl_run 7: Calc_forces_ACL
+ Thrust=   4.6568917473811047E-003 , Torque=   7.4263964821004710E-005 , C_Thrust=  0.75029935699493067      , Power=   3.3196052434982218E-003 , C_Power=  0.63813900573694127     
+ plyudebug, acl_run 8: Calc_F_eul
+ Sum of eulerian force:  -4.6709928885545777E-003   1.1297680762262631E-004  -5.9718330864448279E-006
+ Sum of lagrangian force:  -4.6568917473811047E-003   1.1263558737893642E-004  -5.9487205269881474E-006
+ plyudebug: nacelle_model_run
+ nacelle F_lagr,  -5.3170871389361976     
+ Sum of eulerian force:  -5.0222028679733710E-003   1.1297681189112072E-004  -5.9718330796696621E-006
+ Sum of lagrangian force:  -3.5198097242499095E-004  -3.2620798034217769E-020  -1.3304528068667751E-020
+ SGS stress computed.
+ prediction!
+ Solving p, eps=   1.0000000000000000E-008
+Divergence_info:    0.00136  0.873E-02  313    4    2
+ ======================
+  Time=      0.0027245
+ ======================
+ ti=           2
+ plyudebug, acl_run 1: Uref_ACL
+ plyudebug, acl_run 2: turbineangvel
+ Turbine_           1 :angvel=   44.703228133508006      , TSR=   4.0000000000000000      , U1ref=  0.85762954353144993      , Uref=  0.83818552750327513     
+ plyudebug, acl_run 3: rotor_Rot
+ Angleinfo: ang_axis, ang0_yaw, angvel_axis   5387.1914228345368        0.0000000000000000        44.703228133508006     
+ plyudebug, rotor_Rot, point before rot:  0.75000000000000000       0.34089305152521154       0.14112217479069686     
+ plyudebug, rotor_Rot, point after rot:  0.75000000000000000       0.33994727867455538       0.13992944632074683     
+ plyudebug, acl_run 4: Pre_process(wtm)
+ plyudebug, acl_run 5: Calc_U_lagr
+ plyudebug, acl_run 6: Calc_F_lagr_ACL
+ plyudebug, acl_run 7: Calc_forces_ACL
+ Thrust=   4.6447457753847057E-003 , Torque=   7.3976968315434113E-005 , C_Thrust=  0.74823708414218637      , Power=   3.3070092912301447E-003 , C_Power=  0.63558338811554260     
+ plyudebug, acl_run 8: Calc_F_eul
+ Sum of eulerian force:  -4.6588101652178891E-003   1.1392938859489294E-004  -4.0723337080900352E-006
+ Sum of lagrangian force:  -4.6447457753847057E-003   1.1358531164605739E-004  -4.0565931705779228E-006
+ plyudebug: nacelle_model_run
+ nacelle F_lagr,  -5.3098455645226039     
+ Sum of eulerian force:  -5.0100703024284522E-003   1.1393358954288964E-004  -4.0765971810126275E-006
+ Sum of lagrangian force:  -3.5203053686212922E-004   4.1895750321977017E-009  -4.3238877099829386E-009
+ SGS stress computed.
+ prediction!
+ Solving p, eps=   1.0000000000000000E-008
+Divergence_info:    0.00272  0.643E-02   62    7    2
+ ======================
+  Time=      0.0040868
+ ======================
+ ti=           3
+ plyudebug, acl_run 1: Uref_ACL
+ plyudebug, acl_run 2: turbineangvel
+ Turbine_           1 :angvel=   44.706176299989295      , TSR=   4.0000000000000000      , U1ref=  0.85645558672225575      , Uref=  0.83824080562479930     
+ plyudebug, acl_run 3: rotor_Rot
+ Angleinfo: ang_axis, ang0_yaw, angvel_axis   5387.2523241898180        0.0000000000000000        44.706176299989295     
+ plyudebug, rotor_Rot, point before rot:  0.75000000000000000       0.33994727867455538       0.13992944632074683     
+ plyudebug, rotor_Rot, point after rot:  0.75000000000000000       0.33907579313294112       0.13868128528262336     
+ plyudebug, acl_run 4: Pre_process(wtm)
+ plyudebug, acl_run 5: Calc_U_lagr
+ plyudebug, acl_run 6: Calc_F_lagr_ACL
+ plyudebug, acl_run 7: Calc_forces_ACL
+ Thrust=   4.6325837393619172E-003 , Torque=   7.3693264625461857E-005 , C_Thrust=  0.74617943858376168      , Power=   3.2945440804676624E-003 , C_Power=  0.63306240513585132     
+ plyudebug, acl_run 8: Calc_F_eul
+ Sum of eulerian force:  -4.6466110232880435E-003   1.1469353860730678E-004  -2.0124859625873779E-006
+ Sum of lagrangian force:  -4.6325837393619172E-003   1.1434733110275452E-004  -2.0046982704069747E-006
+ plyudebug: nacelle_model_run
+ nacelle F_lagr,  -5.3027435444979840     
+ Sum of eulerian force:  -4.9979181931012603E-003   1.1469733910067525E-004  -2.0194275979461076E-006
+ Sum of lagrangian force:  -3.5207697104128037E-004   3.7640664525394341E-009  -6.9856223791115588E-009
+ SGS stress computed.
+ prediction!
+ Solving p, eps=   1.0000000000000000E-008
+Divergence_info:    0.00409  0.577E-02  129    5    2
+ ======================
+  Time=      0.0054490
+ ======================
+ ti=           4
+ plyudebug, acl_run 1: Uref_ACL
+ plyudebug, acl_run 2: turbineangvel
+ Turbine_           1 :angvel=   44.708930070834285      , TSR=   4.0000000000000000      , U1ref=  0.85530617718126656      , Uref=  0.83829243882814286     
+ plyudebug, acl_run 3: rotor_Rot
+ Angleinfo: ang_axis, ang0_yaw, angvel_axis   5387.3132292964456        0.0000000000000000        44.708930070834285     
+ plyudebug, rotor_Rot, point before rot:  0.75000000000000000       0.33907579313294112       0.13868128528262336     
+ plyudebug, rotor_Rot, point after rot:  0.75000000000000000       0.33828184451854176       0.13738231490809405     
+ plyudebug, acl_run 4: Pre_process(wtm)
+ plyudebug, acl_run 5: Calc_U_lagr
+ plyudebug, acl_run 6: Calc_F_lagr_ACL
+ plyudebug, acl_run 7: Calc_forces_ACL
+ Thrust=   4.6209952889398774E-003 , Torque=   7.3423594466583264E-005 , C_Thrust=  0.74422117736383742      , Power=   3.2826903505557663E-003 , C_Power=  0.63066810506953508     
+ plyudebug, acl_run 8: Calc_F_eul
+ Sum of eulerian force:  -4.6349875483426431E-003   1.1502974051368900E-004   1.3398926510167892E-007
+ Sum of lagrangian force:  -4.6209952889398774E-003   1.1468253213215538E-004   1.3347647550713514E-007
+ plyudebug: nacelle_model_run
+ nacelle F_lagr,  -5.2958129867572952     
+ Sum of eulerian force:  -4.9863386766647918E-003   1.1503277103628359E-004   1.2429204347671211E-007
+ Sum of lagrangian force:  -3.5212034621843590E-004   2.9998264280121663E-009  -9.7077998301618728E-009
+ SGS stress computed.
+ prediction!
+ Solving p, eps=   1.0000000000000000E-008
+Divergence_info:    0.00545  0.544E-02  293    7    2
+ ======================
+  Time=      0.0068113
+ ======================
+ ti=           5
+ plyudebug, acl_run 1: Uref_ACL
+ plyudebug, acl_run 2: turbineangvel
+ Turbine_           1 :angvel=   44.711493861353397      , TSR=   4.0000000000000000      , U1ref=  0.85418048480735220      , Uref=  0.83834050990037612     
+ plyudebug, acl_run 3: rotor_Rot
+ Angleinfo: ang_axis, ang0_yaw, angvel_axis   5387.3741378956183        0.0000000000000000        44.711493861353397     
+ plyudebug, rotor_Rot, point before rot:  0.75000000000000000       0.33828184451854176       0.13738231490809405     
+ plyudebug, rotor_Rot, point after rot:  0.75000000000000000       0.33756839447657971       0.13603734903143247     
+ plyudebug, acl_run 4: Pre_process(wtm)
+ plyudebug, acl_run 5: Calc_U_lagr
+ plyudebug, acl_run 6: Calc_F_lagr_ACL
+ plyudebug, acl_run 7: Calc_forces_ACL
+ Thrust=   4.6095108416869257E-003 , Torque=   7.3160822322561130E-005 , C_Thrust=  0.74228644872076677      , Power=   3.2711296581667583E-003 , C_Power=  0.62833897249922366     
+ plyudebug, acl_run 8: Calc_F_eul
+ Sum of eulerian force:  -4.6234682050787877E-003   1.1482377114736657E-004   2.0917314249439109E-006
+ Sum of lagrangian force:  -4.6095108416869257E-003   1.1447720663234715E-004   2.0836270616590078E-006
+ plyudebug: nacelle_model_run
+ nacelle F_lagr,  -5.2890215139810666     
+ Sum of eulerian force:  -4.9748602890996307E-003   1.1482876307029118E-004   2.0798473423502345E-006
+ Sum of lagrangian force:  -3.5216073138031760E-004   4.9905888258912870E-009  -1.1883042565412726E-008
+ SGS stress computed.
+ prediction!
+ Solving p, eps=   1.0000000000000000E-008
+Divergence_info:    0.00681  0.524E-02  312   11    2
+ ======================
+  Time=      0.0081735
+ ======================
+ ti=           6
+ plyudebug, acl_run 1: Uref_ACL
+ plyudebug, acl_run 2: turbineangvel
+ Turbine_           1 :angvel=   44.713871953141691      , TSR=   4.0000000000000000      , U1ref=  0.85307776374140398      , Uref=  0.83838509912140669     
+ plyudebug, acl_run 3: rotor_Rot
+ Angleinfo: ang_axis, ang0_yaw, angvel_axis   5387.4350497343657        0.0000000000000000        44.713871953141691     
+ plyudebug, rotor_Rot, point before rot:  0.75000000000000000       0.33756839447657971       0.13603734903143247     
+ plyudebug, rotor_Rot, point after rot:  0.75000000000000000       0.33693810550300768       0.13465137410991809     
+ plyudebug, acl_run 4: Pre_process(wtm)
+ plyudebug, acl_run 5: Calc_U_lagr
+ plyudebug, acl_run 6: Calc_F_lagr_ACL
+ plyudebug, acl_run 7: Calc_forces_ACL
+ Thrust=   4.5987453634895046E-003 , Torque=   7.2923145041351589E-005 , C_Thrust=  0.74047407425687672      , Power=   3.2606761697993743E-003 , C_Power=  0.62623107302375569     
+ plyudebug, acl_run 8: Calc_F_eul
+ Sum of eulerian force:  -4.6126705095643995E-003   1.1433683659422547E-004   4.2635191080972565E-006
+ Sum of lagrangian force:  -4.5987453634895046E-003   1.1399150936752144E-004   4.2470441405475117E-006
+ plyudebug: nacelle_model_run
+ nacelle F_lagr,  -5.2823526738614879     
+ Sum of eulerian force:  -4.9641006185242292E-003   1.1434684757847917E-004   4.2502416642125078E-006
+ Sum of lagrangian force:  -3.5219819346188114E-004   1.0054172254892113E-008  -1.3285475438650486E-008
+ SGS stress computed.
+ prediction!
+ Solving p, eps=   1.0000000000000000E-008
+Divergence_info:    0.00817  0.510E-02  314    1    2
+ ======================
+  Time=      0.0095358
+ ======================
+ ti=           7
+ plyudebug, acl_run 1: Uref_ACL
+ plyudebug, acl_run 2: turbineangvel
+ Turbine_           1 :angvel=   44.716068474661085      , TSR=   4.0000000000000000      , U1ref=  0.85199714528290016      , Uref=  0.83842628389989526     
+ plyudebug, acl_run 3: rotor_Rot
+ Angleinfo: ang_axis, ang0_yaw, angvel_axis   5387.4959645653425        0.0000000000000000        44.716068474661085     
+ plyudebug, rotor_Rot, point before rot:  0.75000000000000000       0.33693810550300768       0.13465137410991809     
+ plyudebug, rotor_Rot, point after rot:  0.75000000000000000       0.33639333089465623       0.13322953059115825     
+ plyudebug, acl_run 4: Pre_process(wtm)
+ plyudebug, acl_run 5: Calc_U_lagr
+ plyudebug, acl_run 6: Calc_F_lagr_ACL
+ plyudebug, acl_run 7: Calc_forces_ACL
+ Thrust=   4.5886139284247287E-003 , Torque=   7.2700483190201072E-005 , C_Thrust=  0.73877016123753825      , Power=   3.2508797844739783E-003 , C_Power=  0.62425761999881380     
+ plyudebug, acl_run 8: Calc_F_eul
+ Sum of eulerian force:  -4.6025087304042093E-003   1.1348268903665492E-004   6.4018145293865341E-006
+ Sum of lagrangian force:  -4.5886139284247287E-003   1.1313992799833531E-004   6.3770386898634393E-006
+ plyudebug: nacelle_model_run

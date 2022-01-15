@@ -1,0 +1,4 @@
+admr03_1: same with admr01, except for the CD00 and CL00.
+now the aerodynamic coefficients is grabbed from VFS test case
+
+admr03_2: restart of admr03_1

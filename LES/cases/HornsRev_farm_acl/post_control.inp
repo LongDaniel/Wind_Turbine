@@ -1,0 +1,3 @@
+30000 40050 # ini_it
+840.0 840.0 70.0 # tb_xc, tb_yc, tb_zc (not used actually)
+0.16 # tb_d

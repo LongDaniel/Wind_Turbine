@@ -1,0 +1,42 @@
+# Root path of source code
+HOSLES_ROOT = /lustre/work/goon/12/100copy/note_LES/src
+
+FC = ftn
+CC = cc
+FFT = fftw3
+
+# enable preprocessing
+CPPFLAGS = -cpp
+# # enable Cray pointer support if needed
+CRAYPTR=-fcray-pointer
+
+# Choose pre-processing options
+# #   -DDOUBLE_PREC   - use double-precision (default single)
+# #   -DEVEN          - for evenly distributed data, use ALLTOALL
+# #   -DSHM         - enable system V shared-memory implementation
+# #   -DOVERWRITE     - allow FFT input to be overwritten (save memory)
+# #   -DOCC           - use API for overlap communication and computation
+# #   -DGLOBAL_ARRAYS - turn on support for Global Arrays toolkit
+# #   -DT3PIO         - turn on LUSTRE IO optimisation code using T3PIO
+
+# # optimisation or debugging flags
+OPTIM = -g -fcheck=all -fbacktrace
+#OPTIM=-O3
+OPTIONS = -DDOUBLE_PREC -Wall
+
+#Define the compiling options
+FFLAGS = $(OPTIM) $(OPTIONS) $(CRAYPTR) $(CPPFLAGS)
+CFLAGS = $(OPTIM) $(CPPFLAGS)
+#CFLAGS = -O3 -r8 -zero
+
+#Define the linking options
+#LDFLAGS = -Wl,--no-as-needed -lrt
+HDF5_ROOT = /opt/cray/hdf5-parallel/1.8.13/GNU/49
+FFTW_ROOT = /opt/fftw/3.3.4.1/x86_64
+
+HDF5_INC = $(HDF5_ROOT)/include
+HDF5_LIB = $(HDF5_ROOT)/lib
+FFTW_INC = $(FFTW_ROOT)/include
+FFTW_LIB = $(FFTW_ROOT)/lib
+
+

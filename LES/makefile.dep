@@ -1,0 +1,192 @@
+# This file is generated automatically by fort_depend.py. DO NOT EDIT!
+#
+#  Created by: goon
+#  Date: 2020-07-24 00:43:24
+#
+
+debug.o : 
+
+smooth_hos.o :  \
+	spectral_hos.o \
+	fft_hos.o \
+	2decomp/decomp.o \
+	param.o \
+	hos_param.o
+
+hos.o :  \
+	hos_param.o \
+	smooth_hos.o \
+	param.o \
+	spectral_hos.o \
+	fft_hos.o \
+	2decomp/decomp.o
+
+param.o :  \
+	2decomp/decomp.o
+
+main.o :  \
+	2decomp/spectral.o \
+	hos_param.o \
+	smooth_hos.o \
+	2decomp/utils.o \
+	2decomp/fft_fftw3.o \
+	post.o \
+	param.o \
+	io_hos.o \
+	spectral_hos.o \
+	grid.o \
+	param.o \
+	io.o \
+	navier.o \
+	wavecontrol.o \
+	fft_hos.o \
+	turbine_model.o \
+	2decomp/decomp.o \
+	hos.o
+
+navier_les.o :  \
+	2decomp/spectral.o \
+	grid.o \
+	param.o
+
+spectral_hos.o :  \
+	fft_hos.o \
+	hos_param.o \
+	2decomp/decomp.o
+
+grid.o :  \
+	2decomp/spectral.o \
+	2decomp/fft_fftw3.o \
+	param.o \
+	2decomp/decomp.o \
+	param.o
+
+lib_array.o : 
+
+fft_hos.o :  \
+	2decomp/decomp.o \
+	param.o \
+	hos_param.o
+
+initial.o :  \
+	2decomp/spectral.o \
+	2decomp/utils.o \
+	param.o \
+	grid.o \
+	navier.o \
+	common.o \
+	fft_hos.o \
+	2decomp/decomp.o
+
+navier_pressure.o :  \
+	2decomp/spectral.o \
+	2decomp/utils.o \
+	2decomp/fft_fftw3.o \
+	param.o \
+	2decomp/discontinuity_smooth.o \
+	grid.o \
+	poisson.o
+
+hdf5_hos.o :  \
+	hos_param.o
+
+io.o :  \
+	2decomp/spectral.o \
+	wavecontrol.o \
+	turbine_model.o \
+	param.o \
+	grid.o \
+	param.o \
+	navier.o \
+	hos_param.o \
+	2decomp/utils.o \
+	2decomp/decomp.o \
+	2decomp/io.o
+
+wavecontrol.o :  \
+	2decomp/utils.o \
+	2decomp/fft_fftw3.o \
+	param.o \
+	grid.o \
+	param.o \
+	2decomp/decomp.o
+
+turbine_model.o :  \
+	2decomp/spectral.o \
+	hos_param.o \
+	lib_array.o \
+	2decomp/utils.o \
+	param.o \
+	2decomp/discontinuity_smooth.o \
+	grid.o \
+	param.o \
+	spectral_hos.o \
+	2decomp/decomp.o
+
+navier.o :  \
+	2decomp/spectral.o \
+	hos_param.o \
+	2decomp/fft_fftw3.o \
+	param.o \
+	2decomp/discontinuity_smooth.o \
+	grid.o \
+	common.o \
+	2decomp/decomp.o
+
+poisson.o :  \
+	2decomp/decomp.o
+
+common.o :  \
+	2decomp/utils.o \
+	2decomp/fft_fftw3.o \
+	param.o \
+	grid.o \
+	2decomp/decomp.o \
+	param.o
+
+navier_fu.o :  \
+	2decomp/spectral.o \
+	turbine_model.o \
+	param.o \
+	2decomp/discontinuity_smooth.o \
+	grid.o \
+	param.o \
+	2decomp/utils.o \
+	2decomp/decomp.o
+
+hos_param.o :  \
+	2decomp/decomp.o
+
+post.o :  \
+	lib_array.o \
+	2decomp/utils.o \
+	2decomp/fft_fftw3.o \
+	io.o \
+	2decomp/spectral.o \
+	param.o \
+	2decomp/decomp.o \
+	turbine_model.o \
+	hos.o \
+	grid.o \
+	spectral_hos.o \
+	common.o \
+	param.o \
+	wavecontrol.o \
+	hos_param.o \
+	smooth_hos.o \
+	io_hos.o \
+	2decomp/discontinuity_smooth.o \
+	navier.o \
+	fft_hos.o \
+	2decomp/io.o
+
+io_hos.o :  \
+	hdf5_hos.o \
+	hos.o \
+	hos_param.o \
+	2decomp/decomp.o \
+	spectral_hos.o
+
+main_hos.o :  \
+	io_hos.o \
+	hos.o

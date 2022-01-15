@@ -1,0 +1,15 @@
+3 # rotor_model
+16 1 3 # NumberOfTurbines, num_foiltype, num_blade
+1.67 # loc_refvel
+0 1 # FixTurbineAngvel, FixTipspeedRatio
+1.0 # halfwidth_dfunc
+1 # nacelle_model
+1 # rotate_nacelle
+48 3 # NumberOfNacelle, NumNacellePerLoc
+1 1 # deltafunc_U, deltafunc_F
+1 1.0 1.0  # Shen1_AL, Shen1_AL_tipcorrection, Shen1_AL_tipcorrectionratio_Fa
+0 4.15 4.2 0.1 0.1 0.1 0 1 0.086761566868 # InletRelaxation IR_start IR_end IR_cx IR_cy IR_cz IR_NSmooth IR_dataindex IR_scale
+0.75 # c_bforce
+0 0 # adjust_CT_ACL, adjust_CP_ACL
+2 # adjust_CT_nacelle
+1 # fsitype

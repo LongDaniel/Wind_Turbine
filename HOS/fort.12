@@ -1,0 +1,37 @@
+256 128 5 16                        $NXMOD, NYMOD, NPW NCPU
+1                               $ISTART
+0                               $ISWELL
+256 4096 4                      $NTIME,NOUTD,NOUTC
+64 -0.025                        $NTP DT
+2.055184914 4.110365068       	$PEX PEY
+2                               $NSWAVEX
+0.20 12 6                     $AKA NSWELLX NSWELLY
+0.102040816                     $FR2
+0.45 8 0.45          	        $USTAR U10 USS
+3.3 500 9.8 90               $NU F G PHI
+1 136111.111 0 			$IST BOND ICAP
+
+
+C===================================================================
+C
+C
+C
+C===================================================================
+
+
+C     2*PI/PEX IS THE STREAMWISE SIMULATION DOMAIN SIZE
+C     2*PI/PEY IS THE SPANWISE SIMULATION DOMAIN SIZE
+
+
+C     USTAR IS THE DIMENSIONALESS WIND FRICTION VELOCITY.
+C     IT IS THE VALUE FROM THE LES.
+
+C     U10 IS THE DIMENSIONAL WIND VELOCITY AT 10 METER HEIGHT.
+
+C     USS IS THE DIMENSIONL WIND FRICTION VELOCITY.
+
+C     F IS THE DIMENSIONAL FETCH VALUE.
+
+C     G IS THE GRAVITATIONAL ACCELERATION.
+
+C     BOND NUMBER IS DEFINED AS \rho G/L^2/SIGMA.

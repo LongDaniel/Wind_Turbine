@@ -1,0 +1,17 @@
+2                               MFILT
+1                               ICSC
+0   200000.0  0.0               ILASD,TLASD,TLASD0
+0   0.16   25                   IVANDRIEST,CS0,APLUS
+0   0.05                        IWAVEBOT,ZCS0
+
+######################################################
+#       INSTRUCTION FOR THIS FILE "LES.IN"
+######################################################
+1.MFILT: =1: GAUSSIAN FILTER
+         =2: SHARP SPECTRAL CUTOFF FILTER
+
+2.ICSC:
+
+3.ILASD,TLASD,TLASD0: TLASD IS THE TIME WHEN ALL PLANE AVERAGE MODEL IS CHANGED TO DYNAMIC MODEL
+IF TIME>TLASD THEN JUST USE DYNAMIC MODEL
+IF TIME<TLASD THEN USE A WEIGHTED AVERAGE OF DYNAMIC MODEL AND PLANE AVERAGE

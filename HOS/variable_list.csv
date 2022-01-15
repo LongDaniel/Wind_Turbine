@@ -1,0 +1,77 @@
+fort.12
+
+nxhos
+nyhos
+npw # Perturbation order with respect to wave steepness
+ncpu_hos
+
+istart_hos
+iswell
+ntime_hos
+noutd_hos
+noutc_hos
+ntp # if(dt_hos<=0) dt_hos = period / ntp
+dt_hos # 
+
+pex_hos # dx_hos = twopi / pex_hos / nxhos
+pey_hos # dy_hos = twopi / pey_hos / nyhos
+nswavex # Number of wavelength in x direction of domain
+aka # amp = aka / nswavex/pex_hos = aka * Lambda_x / twopi
+nswellx
+nswelly
+fr2
+ustar # NEVER USED, dimensionless wind friction velocity
+
+u10 # jonswap_init, dimensional wind velocity at 10 meter height
+uss # NEVER USED, dimensional wind friction velocity
+gamma # jonswap_3d
+fetch # jonswap_init, dimensional fetch value
+g # jonswap_init, gravitational acceleration
+
+phi # NEVER USED
+ist_hos # whether to consider surface tension
+bond # parameter in ist_hos, defined as \rho G/L^2/SIGMA
+icap_hos # UNCLEAR, used in righ()
+
+fort.13
+
+nfhos # fqh = nfhos*dfq/1.1
+nthos # mod(nthos,ncpu_hos)=0
+
+numprocs # Number of processors, returned from mpi_comm_size
+
+eta_hos
+ex_hos
+ey_hos
+vps_hos
+vpsx_hos
+vpsy_hos
+feta
+fvps
+u_hos
+v_hos
+w_hos
+pa_hos
+wvn
+r_hos
+zp
+ist_hos
+pa_st
+
+time_hos
+
+dfq # resolution of frequency band, dfq= tmpomg / twopi / nfhos
+dth # resolution of theta, dth = twopi / nthos
+fql
+fqh
+thl
+thh
+maxnfq
+minnfq
+maxnth
+minnth
+
+omega0
+
+period # =twopi/sigma
+sigma # one of many versions: sigma=(nswavex*pex_hos/fr2)**0.5

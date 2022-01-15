@@ -1,0 +1,4 @@
+2600 35000 # ini_it
+3 # tb_post_nx
+0.3 0.36 0.125 # tb_xc, tb_yc, tb_zc
+0.15 # tb_d

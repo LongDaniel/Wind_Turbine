@@ -1,0 +1,85 @@
+ plyudebug, z_grid para: q1, a1, nz1, L1=  0.90000000000000002        1.8717948717948716E-002           4   7.2999999999999995E-002
+ plyudebug, z_grid para: q2, a2, nz2, L2=  0.99830052930021151        1.4768602217409801E-002          25  0.36178260869599999     
+ plyudebug, z_grid para: q3, a3, nz3, L3=   1.0061686709115309        1.4077772731791317E-002          36  0.56521739130400006     
+ plyudebug: read_acl/acs_param 1: collect_grid
+ nproc1=           8
+ xsz(1:3)=         384          12          17
+ ysz(1:3)=          96          48          17
+ plyunote: Domain decomposition info:
+ rank2d, coord2d(1:2), rankcol, rankrow, xst(1:3)
+           0           0           0           0           0           1           1           1
+           1           0           1           1           0           1          13           1
+          14           1           6           6           1           1          73          18
+          22           2           6           6           2           1          73          34
+          25           3           1           1           3           1          13          50
+          26           3           2           2           3           1          25          50
+           3           0           3           3           0           1          37           1
+           6           0           6           6           0           1          73           1
+          11           1           3           3           1           1          37          18
+          23           2           7           7           2           1          85          34
+          27           3           3           3           3           1          37          50
+           8           1           0           0           1           1           1          18
+           9           1           1           1           1           1          13          18
+          18           2           2           2           2           1          25          34
+          19           2           3           3           2           1          37          34
+          28           3           4           4           3           1          49          50
+          30           3           6           6           3           1          73          50
+           2           0           2           2           0           1          25           1
+           4           0           4           4           0           1          49           1
+           5           0           5           5           0           1          61           1
+           7           0           7           7           0           1          85           1
+          10           1           2           2           1           1          25          18
+          12           1           4           4           1           1          49          18
+          13           1           5           5           1           1          61          18
+          15           1           7           7           1           1          85          18
+          16           2           0           0           2           1           1          34
+          17           2           1           1           2           1          13          34
+          20           2           4           4           2           1          49          34
+          21           2           5           5           2           1          61          34
+          24           3           0           0           3           1           1          50
+          29           3           5           5           3           1          61          50
+          31           3           7           7           3           1          85          50
+ plyudebug: read_acl/acs_param 2: read control.dat
+ plyudebug: read_acl/acs_param 3: read Turbine.inp
+ !!!!!! Reading Turbine2.inp !!!!!!
+ plyudebug: read_acl_param 4: read ACL_ucd
+ plyudebug: read_acl_param 5: preprocess(wtm)
+ plyudebug: read_acl_param 6: read Uref_ucd)
+ dh_uref=   2.2306056293753484E-003
+ !!!!!!! Reading restart_uref.dat !!!!!!
+ plyudebug: read_acl_param 7: preprocess(Uref)
+ plyudebug: read_acl_param 8: read ACL_coeff
+ C_D =    6.0200000000000002E-003  at AOA=0 for foil type            1
+ Zero-lift angle is    0.0000000000000000     
+ plyudebug: read_nacelle_param, read_nacelle_control
+ plyudebug: read_nacelle_control: read Nacelle.inp
+ plyudebug: read_nacelle_param, disk_read_ucd
+ dh_uref=   7.4895189536265466E-004
+ dh_uref=   6.2288374326368440E-004
+ dh_uref=   5.6674398849946054E-004
+ plyudebug: read_nacelle_param, Pre_process 1
+ plyudebug: read_nacelle_param, Coordinates_IP
+ plyudebug: read_nacelle_param, Pre_process 2
+ plyudebug: read_nacelle_param: completed
+ ======================
+  Time=      0.0013623
+ ======================
+ ti=           1
+ plyudebug, acl_run 1: Uref_ACL
+ plyudebug, acl_run 2: turbineangvel
+ Turbine_           1 :angvel=   42.677247822725292      , TSR=   4.0000000000000000      , U1ref=  0.86557239864949509      , Uref=  0.80019839667609916     
+ plyudebug, acl_run 3: rotor_Rot
+ plyudebug, initial_ang_axis=   5387.0696324434994     
+ Angleinfo: ang_axis, ang0_yaw, angvel_axis   5387.1277698743233        0.0000000000000000        42.677247822725292     
+ plyudebug, rotor_Rot, point before rot:  0.75000000000000000       0.38500000000000001       0.12500000000000000     
+ plyudebug, rotor_Rot, point after rot:  0.75000000000000000       0.34093755061771636       0.14117476502295709     
+ plyudebug, acl_run 4: Pre_process(wtm)
+ plyudebug, acl_run 5: Calc_U_lagr
+ plyudebug, acl_run 6: Calc_F_lagr_ACL
+ plyudebug, acl_run 7: Calc_forces_ACL
+ Thrust=   4.3487994793103913E-003 , Torque=   7.1317824114277276E-005 , C_Thrust=  0.76865529902712537      , Power=   3.0436484539025453E-003 , C_Power=  0.67229372067795423     
+ plyudebug, acl_run 8: Calc_F_eul
+ Sum of eulerian force:  -4.3451060953798113E-003   2.1353544698547125E-004  -3.8532310853566903E-005
+ Sum of lagrangian force:  -4.3487994793103913E-003   2.1371682014198714E-004  -3.8532257503112051E-005
+ plyudebug: nacelle_model_run
+ nacelle F_lagr,  -4.5741328783445816     

@@ -1,0 +1,234 @@
+ISTART # 
+ISCALAR #
+ITURBINE #
+IWCONTROL #
+NP1 # ncpu_hos = np1, nproc1=p_row=np1,decomp_init(nx,ny,nz,p_row=np1,p_col=np2)
+NP2 # nproc=p_row*p_col, nproc2=p_col=np2, min(nx,ny)>=p_row, nz>=p_col
+
+PEX # Minimum wavenumber in x-direction, pex_hos = pex
+PEY #
+ZL # domain size in the vertical direction
+HBAR # average depth
+Z0 # u2=usbot*(2.5_wp*log(z/z0)), RE=RESBOT*(2.5*LOG(hbar/z0))
+
+NX # grid number in x direction for LES
+NY #
+NZ #
+NXS # nxhos = nxs, grid number in x direction for HOS
+NYS # 
+
+DT #
+NTIME #
+
+ITMAX # maximum iteration times in poisson equation
+ERLIM # error limitation in pressure poisson equation iterations
+
+RESBOT #
+RESTOP #
+
+FR2 # Froude Number
+WE # Weber Number
+
+NOUTD # ioutd, output_all
+NOUTC # ioutc, output_xy_average, output_cut(time), output_surface, call outsurf
+
+CLBETA # largest grid ration
+CLGAMA # clustering papameter: smaller value -> more clustered
+
+ARM # target value of wind velocity r.m.s 
+
+HKA # wave slope (ak) in hos. HKA=HA*HK
+NWAVE # NUMNER OF WAVE IN X DIRECTION
+CRAT # =VPHASE/USBOT, wave age
+TIMEWAVY # Begin time of wavy surface, time0=time-timewavy, hh = -eta * (1.0_wp-fexp)
+TCOEF # fexp=exp(-tcoef*time0**2)
+IWAVY # =1, solid wavey wall; =2, vertically moving wavy wall; =3, water wave surface; =4, water wavesurface with wind drift; =5, stokes wave; =6, stokes wave with wind drift; =7, HOS wave simulation
+
+ERVFILT # CRITERIO FOR VELOCITY FILTERING, these 3 parameters are not used actually
+NFILT # 1/NFILT MODES WILL REMAIN AFTER FILTERING
+IFILT # IFILT=1--FILTERING; IFILT=0--NOT FILTERING
+
+IPA # padding?
+NTH # dt_hos = dt/ nth, for iwavy=7, time_hos=time-(nth-ith)*dt/nth
+
+TIMEP # begin time of pressure on hos
+TCP # fexp=exp(-tcp*time0**2.0_wp), pa_hos=rdgl*pa_hos*(1.0_wp-fexp)
+TIMEW # defined but not used 
+RDGL # 
+TIMETURB # the time when turbine force is added to domain 
+AKA #
+NSWAVE #
+NSWAVEX #
+USTAR #
+U10 #
+USS #
+gamma #
+F #
+G #
+PHI #
+IST #
+WEBER #
+
+clen
+cspeed
+ctime
+
+npw #
+
+XL # =TWOPI/PEX, domain length in x-direction
+DX # =XL/NX
+AK # WAVE NUMBER
+AA # WAVE AMPLITUDE
+OMEG # WAVE ANGLE FREQUENCY
+NSWAVE # =AK/PEX, NUMBER OF SURFACE WAVES IN X DIRECTION
+AKA # =AA*AK, WAVE SLOPE
+CSW # PHASE SPEED OF SURFACE WAVE
+
+RESTOP # =u_tau*H_top/nu 
+RESBOT # =u_tau*H_bottom/nu
+ZLSBOT # =1./RESBOT
+ZLSTOP # =1./RESTOP
+USBOT # =1./(2.5*log(hbar/z0)), ATTENTION: here velocity on top is assumed to be 1.0 
+USTOP # turbulence parameters
+RE # turbulence parameters
+BFORCE # turbulence parameters, BFORCE=USBOT**2/HBAR
+
+HK # WAVE NUMBER, COEF FOR BOTTOM WAVY WALL, value seems to be equal to AK
+HA # WAVE AMPLITUDE, COEF FOR BOTTOM WAVY WALL
+HOMEG # WAVE ANGLE FREQUENCY, COEF FOR BOTTOM WAVY WALL
+VPHASE # WAVE PHASE SPEED, COEF FOR BOTTOM WAVY WALL
+
+CRAT # 
+
+phy_x
+phy_y
+
+NCPU # deprecated, now use ncpu_hos
+ncpu_hos #
+
+xsz # 3x1 array, the grid number of three dimensions in x-spcetral space, see fft_init_hos, xsz(1) = nxhos, xsz(2) = nyhos / ncpu_hos, nz = xsz(3)
+ysz # 3x1 array, the grid number of three dimensions in y-spcetral space, see fft_init_hos
+
+NXMAX
+NYMAX
+NZMAX # =nz+1, deprecated.
+
+
+zz # vertical coordinate in the transformed domain
+zw # staggered grid in vertial coordinate
+
+u # allocate(u(xsz(1),xsz(2),1-level:xsz(3)+level))
+v
+w
+hu
+hv
+hw
+fu
+fv
+fw
+pp
+pf0
+uzfs
+vzfs
+wzfs
+ut
+vt
+wt
+ub
+vb
+wb
+wtforce # size:(xsz(1),xsz(2),1-level:xsz(3)+level)
+pu
+pv
+pw
+u_xi
+u_psi
+u_zeta
+ux
+uy
+uz_u
+vx
+vy
+vz_u
+vx
+vy
+vz_u
+wx
+wy
+wz_w
+tauwx
+tauwy
+cc
+lap_u_ao
+lap_u_al
+lap_u_ar
+lap_w_ao
+lap_w_al
+lap_w_ar
+lap_p_ao
+lap_p_al
+lap_p_ar
+
+
+nut
+nutw
+s11
+s12
+s13
+s22
+s23
+s33
+t11
+t12
+t13
+t22
+t23
+t33
+ss
+s11w
+s12w
+s13w
+s22w
+s23w
+s33w
+t11w
+t12w
+t13w
+t23w
+t33w
+uf
+vf
+wf
+
+nxs
+nys
+npw # Maximum perturbation order 
+dx_hos
+dy_hos
+dt_hos
+nth
+fr2
+
+
+icon
+
+
+iwavy # =1, solid wavey wall; =2, vertically moving wavy wall; =3, water wave surface; =4, water wavesurface with wind drift; =5, stokes wave; =6, stokes wave with wind drift; =7, HOS wave simulation
+
+nxmod # deprecated. nxmod=nx-1
+
+
+ud # disk-averaged time-averaged local velocity
+ndisc # disc number index (which disc the grid point belongs to)
+idisc # =1 if inside a turbine disc, =0 if outside any turbine disc
+
+
+module grid
+eta # eta(xsz(1),xsz(2)) 
+
+
+module hos_param
+nxhos # 
+eta_hos # eta_hos(nxhos,nyhos/ncpu_hos)
+
+

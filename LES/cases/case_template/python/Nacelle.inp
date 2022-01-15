@@ -1,0 +1,4 @@
+# nx_tb ny_tb nz_tb x_c y_c z_c angvel_axis rotate_alongaxis frictionfactor dh xnacelle_upstreamend ynacelle_upstreamend znacelle_upstreamend CT0 area_CT ratio_CT0
+1.0 0.0 0.0 0.75 0.36 0.125 0.0 0 0.0 0.00842078838472 -0.3 0.0 0.0 1.0 0.00031415926 1.0
+1.0 0.0 0.0 0.75 0.36 0.125 46.1233069074 1 0.0 0.00842078838472 -0.3 0.0 0.0 1.0 0.00031415926 1.0
+1.0 0.0 0.0 0.75 0.36 0.125 0.0 0 0.0 0.00842078838472 -0.3 0.0 0.0 0.5 0.00127974 1.0
